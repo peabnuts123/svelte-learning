@@ -4,13 +4,22 @@
 
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     </head>
-    <body class="container">
-        <h1>Svelte <small>Learning page</small></h1>
-        <p>This page is a demonstation of the various capabilites of the <a href="http://svelte.technology">Svelte</a> UI framework, for native JavaScript templating on the web.</p>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Svelte <small>Learning page</small></h1>
+                <p>This page is a demonstation of the various capabilites of the <a href="http://svelte.technology">Svelte</a> UI framework, for native JavaScript templating on the web.</p>
+            </div>
 
-        <div id="testMountPoint"></div>
+            <h2>Modules</h2>
+            <p>The following modules are all Svelte-defined modules, each demonstrating a different set of features in the framework.</p>
 
-        <script type="text/javascript" src="dist/BasicModule.js"></script>
-        <script type="text/javascript" src="index.js"></script>
+            <div class="well">
+                <div id="basicModule"></div>
+            </div>
+
+            <script type="text/javascript" src="dist/BasicModule.js"></script>
+            <script type="text/javascript" src="index.js"></script>
+        </div>
     </body>
 </html>
